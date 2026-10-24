@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVF HOMES | Luxury Real Estate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="#home" class="logo">SVF <span>HOMES</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+
+    <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#properties">Properties</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#booking" class="nav-btn">Book a Visit</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <p class="eyebrow">YOUR DREAM HOME STARTS HERE</p>
+        <h1>Find a Place<br>You'll <span>Love to Live.</span></h1>
+        <p class="hero-description">
+            Discover exceptional homes, premium villas and investment
+            opportunities with SVF HOMES.
+        </p>
+        <div class="hero-actions">
+            <a href="#properties" class="btn btn-gold">Explore Properties ↗</a>
+            <a href="#about" class="btn btn-outline">Discover SVF</a>
+        </div>
+        <div class="hero-note">TRUST • QUALITY • COMFORT</div>
+    </div>
+
+    <div class="slide-controls">
+        <button id="prevSlide" aria-label="Previous slide">←</button>
+        <span id="slideNumber">01 / 03</span>
+        <button id="nextSlide" aria-label="Next slide">→</button>
+    </div>
+</section>
+
+<section class="search-section">
+    <form id="searchForm" class="search-box">
+        <div>
+            <label for="locationFilter">Location</label>
+            <select id="locationFilter">
+                <option value="">All Locations</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Bengaluru">Bengaluru</option>
+            </select>
+        </div>
+        <div>
+            <label for="typeFilter">Property Type</label>
+            <select id="typeFilter">
+                <option value="">All Types</option>
+                <option value="Villa">Villa</option>
+                <option value="Apartment">Apartment</option>
+                <option value="House">House</option>
+            </select>
+        </div>
+        <div>
+            <label for="budgetFilter">Budget</label>
+            <select id="budgetFilter">
+                <option value="">Any Budget</option>
+                <option value="50">Under ₹50 Lakhs</option>
+                <option value="100">₹50 Lakhs – ₹1 Crore</option>
+                <option value="101">Above ₹1 Crore</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-gold search-btn">Search Homes ↗</button>
+    </form>
+</section>
+
+<section class="section properties-section" id="properties">
+    <div class="section-heading">
+        <div>
+            <p class="eyebrow">OUR PROPERTY COLLECTION</p>
+            <h2>Homes Worth <span>Coming Home To.</span></h2>
+        </div>
+        <p>Explore handpicked properties designed for your lifestyle.</p>
+    </div>
+
+    <div class="property-grid" id="propertyGrid">
+
+        <article class="property-card" data-location="Chennai"
+            data-type="Villa" data-price="85">
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&q=85" alt="Luxury villa">
+                <span class="property-tag">FEATURED</span>
+            </div>
+            <div class="property-info">
+                <p class="property-location">⌖ Chennai</p>
+                <h3>Modern Luxury Villa</h3>
+                <p class="property-details">4 Beds &nbsp; • &nbsp; 3 Baths &nbsp; • &nbsp; Villa</p>
+                <div class="property-bottom">
+                    <strong>₹85 Lakhs</strong>
+                    <button class="view-btn" data-property="Modern Luxury Villa">View Details ↗</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="property-card" data-location="Coimbatore"
+            data-type="House" data-price="45">
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85" alt="Contemporary family home">
+                <span class="property-tag">POPULAR</span>
+            </div>
+            <div class="property-info">
+                <p class="property-location">⌖ Coimbatore</p>
+                <h3>Elegant Family Home</h3>
+                <p class="property-details">3 Beds &nbsp; • &nbsp; 2 Baths &nbsp; • &nbsp; House</p>
+                <div class="property-bottom">
+                    <strong>₹45 Lakhs</strong>
+                    <button class="view-btn" data-property="Elegant Family Home">View Details ↗</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="property-card" data-location="Bengaluru"
+            data-type="Apartment" data-price="120">
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Premium modern residence">
+                <span class="property-tag">PREMIUM</span>
+            </div>
+            <div class="property-info">
+                <p class="property-location">⌖ Bengaluru</p>
+                <h3>Premium Urban Residence</h3>
+                <p class="property-details">3 Beds &nbsp; • &nbsp; 3 Baths &nbsp; • &nbsp; Apartment</p>
+                <div class="property-bottom">
+                    <strong>₹1.2 Crore</strong>
+                    <button class="view-btn" data-property="Premium Urban Residence">View Details ↗</button>
+                </div>
+            </div>
+        </article>
+
+    </div>
+    <p class="no-results" id="noResults" hidden>No properties match your filters. Try another search.</p>
+</section>
+
+<section class="about-section" id="about">
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85" alt="Beautiful modern home interior">
+        <div class="image-caption">A BETTER WAY TO FIND YOUR HOME</div>
+    </div>
+    <div class="about-content">
+        <p class="eyebrow">WELCOME TO SVF HOMES</p>
+        <h2>More Than a House.<br><span>A Place to Belong.</span></h2>
+        <p>At SVF HOMES, we help you explore properties that fit your dreams, lifestyle and budget. From beautiful family homes to premium investments, we make your property search simple.</p>
+        <div class="about-points">
+            <div><strong>01</strong><span>Personalised Property Search</span></div>
+            <div><strong>02</strong><span>Dedicated Customer Support</span></div>
+            <div><strong>03</strong><span>Easy Site Visit Booking</span></div>
+        </div>
+        <a href="#contact" class="btn btn-gold">Get in Touch ↗</a>
+    </div>
+</section>
+
+<section class="booking-section" id="booking">
+    <div class="booking-text">
+        <p class="eyebrow">LET'S FIND YOUR PLACE</p>
+        <h2>Your Dream Home<br><span>Is One Visit Away.</span></h2>
+        <p>Interested in a property? Schedule a site visit and our team can get in touch with you.</p>
+    </div>
+
+    <form id="bookingForm" class="booking-form">
+        <h3>Book a Site Visit</h3>
+        <label for="customerName">Your Name</label>
+        <input id="customerName" name="name" type="text" placeholder="Enter your name" required>
+
+        <label for="customerPhone">Phone Number</label>
+        <input id="customerPhone" name="phone" type="tel" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile number" required>
+
+        <label for="bookingProperty">Interested Property</label>
+        <select id="bookingProperty" name="property" required>
+            <option value="">Choose a property</option>
+            <option>Modern Luxury Villa</option>
+            <option>Elegant Family Home</option>
+            <option>Premium Urban Residence</option>
+        </select>
+
+        <label for="visitDate">Preferred Visit Date</label>
+        <input id="visitDate" name="date" type="date" required>
+
+        <button type="submit" class="btn btn-gold booking-submit">Request Site Visit ↗</button>
+        <p id="bookingMessage" class="form-message" aria-live="polite"></p>
+        <small>This demo opens WhatsApp with your booking request.</small>
+    </form>
+</section>
+
+<section class="contact-section" id="contact">
+    <p class="eyebrow">CONNECT WITH US</p>
+    <h2>Let's Talk About <span>Your Next Home.</span></h2>
+    <p>Have a question or want to explore a property? Contact SVF HOMES.</p>
+    <div class="contact-links">
+        <!-- Replace the sample phone number with your business number -->
+        <a href="#" id="whatsappLink" class="social-link">WhatsApp ↗</a>
+        <!-- Replace # with your official social media profile URLs -->
+        <a href="#" class="social-link" data-social="facebook">Facebook ↗</a>
+        <a href="#" class="social-link" data-social="instagram">Instagram ↗</a>
+    </div>
+</section>
+
+<footer>
+    <a href="#home" class="logo">SVF <span>HOMES</span></a>
+    <p>Find your place. Build your future.</p>
+    <p class="copyright">© <span id="year"></span> SVF HOMES. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
